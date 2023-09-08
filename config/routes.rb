@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   match 'hello', to: "main#hello", via: :get
 
   get 'main/index'
+  resources :books
+  root 'books#index'
 
   resources :books do
     member do
@@ -28,3 +30,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 end
+
