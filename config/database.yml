@@ -23,7 +23,6 @@ default: &default
   host: localhost
   username: <%= ENV['DATABASE_USER'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
 
 
 development:
@@ -89,3 +88,4 @@ production:
   database: task_manager_production
   username: task_manager
   password: <%= ENV["TASK_MANAGER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
